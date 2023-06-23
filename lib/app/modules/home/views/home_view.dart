@@ -59,7 +59,7 @@ class HomeView extends StatelessWidget {
             SizedBox(height: 8),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Cari...',
+                hintText: 'Cari Restaurant...',
                 prefixIcon: Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
