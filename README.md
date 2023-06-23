@@ -3,7 +3,7 @@ A simple mobile application to display and search for restaurants using Flutter 
 
 ## :hammer_and_wrench: Libraries Used
 - [Http](https://pub.dev/packages/http)
-- [Http](https://pub.dev/packages/get)
+- [Get](https://pub.dev/packages/get)
 - [Lottie](https://pub.dev/packages/lottie)
 
 ## :camera: Mockup
