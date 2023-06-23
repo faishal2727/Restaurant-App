@@ -7,4 +7,4 @@ A simple mobile application to display and search for restaurants using Flutter 
 - [Lottie](https://pub.dev/packages/lottie)
 
 ## :camera: Mockup
-<img src="https://github.com/faishal2727/Restaurant-App/blob/main/mockup/myMockup.png" width=1000/>
+<img src="https://github.com/faishal2727/Restaurant-App/blob/main/mockup/myMockup.png" width=800/>
