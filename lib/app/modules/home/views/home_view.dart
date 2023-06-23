@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import '../../detail/views/detail_view.dart';
 import '../controllers/home_controller.dart';
 
@@ -74,11 +75,13 @@ class HomeView extends StatelessWidget {
                 () {
                   if (controller.isLoading.value) {
                     return Center(
-                      child: CircularProgressIndicator(),
+                      child: Lottie.asset('assets/lottie/waiting_load.json',
+                          width: 250, height: 250),
                     );
                   } else if (controller.restaurants.isEmpty) {
                     return Center(
-                      child: Text('No restaurants found.'),
+                      child: Lottie.asset('assets/lottie/not_result.json',
+                          width: 250, height: 250),
                     );
                   } else {
                     return ListView.builder(
@@ -88,7 +91,8 @@ class HomeView extends StatelessWidget {
                         return InkWell(
                           onTap: () {
                             print('ID: ${restaurant.id}');
-                              Get.to(() => DetailView(restaurantId: restaurant.id));
+                            Get.to(
+                                () => DetailView(restaurantId: restaurant.id));
                           },
                           child: Card(
                             child: Row(
@@ -127,7 +131,10 @@ class HomeView extends StatelessWidget {
                                               Icons.location_on,
                                               size: 12,
                                             ),
-                                            Text(restaurant.city, style: TextStyle(fontSize: 12),)
+                                            Text(
+                                              restaurant.city,
+                                              style: TextStyle(fontSize: 12),
+                                            )
                                           ],
                                         )
                                       ],
